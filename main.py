@@ -20,6 +20,7 @@ def register():
                 print(f"\n===Register===")
                 for i in ordered_list:
                     print(f"\n{i}")
+                print(f"\n===End of List===")
                 break
             elif again == "y":
                 print("Please enter another name")
