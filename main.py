@@ -1,5 +1,3 @@
-# Print Menu Message
-
 print("===Create a Register===")
 
 # Create empty list
@@ -13,9 +11,8 @@ def register():
 
             name_list.append(name)
 
-            again = input("Would you like to add another name? (y/n): ")
+            again = input("Would you like to add another name? (y/n): ").lower()
             if again == "n":
-
                 ordered_list = sorted(name_list)
                 print(f"\n===Register===")
                 for i in ordered_list:
