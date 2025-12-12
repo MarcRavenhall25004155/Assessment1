@@ -6,6 +6,11 @@ print("===Create a Register===")
 register_dict = {}
 
 def add_entry(name):
+    """
+    Add a name and time to the register
+    :param name: user input
+    :return: name, time
+    """
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return name, now
 
