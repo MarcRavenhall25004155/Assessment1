@@ -23,12 +23,12 @@ def register():
             again = input("Would you like to add another name? (y/n): ").lower()
             if again == "n":
                 print(f"\n===Register===")
-                    # Loop through both key and value at the same time using .items()
+                # Loop through both key and value at the same time using .items()
                 for name, time in sorted(register_dict.items()): # Unpack Dictionary entries into two variables (name/time)
                     print(f"{name} - {time}") # time variable has now been assigned the timestamp
                 print(f"\n===End of List===")
                 break
             elif again == "y":
                 print("Please enter another name")
-
-register() # Call on function to repeat loop
+if __name__ == "__main__": # register() only runs when the file is executed directly instead of immediately after import.
+    register() # Call on function to repeat loop
